@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background:magenta;
+        }
+
+        .container{
+            width: 600px;
+            margin: 30px auto;
+            background: rgb(228, 154, 200);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2{
+            text-align: center;
+            color: #333;
+        }
+
+        label{
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea{
+            height: 80px;
+        }
+
+        .btn{
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .register{
+            background-color: green;
+        }
+
+        .reset{
+            background-color: red;
+        }
+
+        button:hover{
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration Form</h2>
+
+    <form>
+        <label>First Name</label>
+        <input type="text" placeholder="Enter First Name" required>
+
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter Last Name" required>
+
+        <label>Gender</label>
+        <select required>
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter Phone Number" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter Email" required>
+
+        <label>School Name</label>
+        <input type="text" placeholder="Enter School Name" required>
+
+        <label>Department</label>
+        <input type="text" placeholder="Enter Department">
+
+        <label>Level</label>
+        <select>
+            <option>Select Level</option>
+            <option>L3</option>
+            <option>L4</option>
+            <option>L5</option>
+        </select>
+
+        <label>Project Title</label>
+        <input type="text" placeholder="Enter Project Title">
+
+        <label>Project Category</label>
+        <input type="text" placeholder="Enter Project Category">
+
+        <label>Project Description</label>
+        <textarea placeholder="Describe your project"></textarea>
+
+        <label>Upload Project Proposal (PDF)</label>
+        <input type="file">
+
+        <label>Upload Student ID</label>
+        <input type="file">
+
+        <div class="btn">
+            <button type="submit" class="register">Register</button>
+            <button type="reset" class="reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
